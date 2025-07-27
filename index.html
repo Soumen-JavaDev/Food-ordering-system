@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Ordering System</title>
+    
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
   </head>
 
   <body>
-    <section id="main">
-      <div class="side-bar">
+    <div id="main">
+       <div class="side-bar">
+        <span class="material-symbols-outlined hamburger-close"> close </span>
         <div class="big-log">
           <img src="assit/logo.png" alt="your logo" />
         </div>
@@ -28,41 +35,48 @@
             <li><a href="">3. Wallet</a></li>
             <li><a href="">4. Profile</a></li>
             <li><a href="">5. Logout</a></li>
-            <li onclick="secondScreen()"><a>6. Menu/secondScreen</a></li>
+            <li onclick="secondScreen()">
+              <a href="#">6. Menu/secondScreen</a>
+            </li>
           </ul>
         </div>
         <hr />
         <div>
-            <p class="heading">More About Us</p>
+          <p class="heading">More About Us</p>
           <ul>
             <li><a href="">1. Our Blog</a></li>
             <li><a href="">2. Upcoming Dishes</a></li>
             <li><a href="">3. Our Story</a></li>
             <li><a href="">4. Profile</a></li>
             <li><a href="">5. Social Media Links</a></li>
-            
           </ul>
         </div>
-      </div>
+      </div> 
+
       <div class="main-contener">
         <div class="nav-element">
+          <span class="material-symbols-outlined" id="hamburger-open"
+            >menu</span
+          >
           <div class="search-box">
             <span class="material-symbols-outlined"> search </span>
             <input type="text" placeholder="search Food Item" />
           </div>
-          <button class="red-btn">Signup</button>
+          <button class="red-btn signup">Signup</button>
           <button class="red-btn">Login</button>
           <img src="assit/logo.png" alt="small-logo" class="small-logo" />
-        </div>
-        <div class="hero-img">
+        </div> 
+         <div class="hero-img"> 
           <img src="assit/hero_b.png" alt="hero-img" />
-        </div>
-        <div id="menu-contener">
+        </div>  
+      <div id="menu-contener">
           <h2>Menu</h2>
-          <div class="menu-item"></div>
-        </div>
+          <div class="menu-item">
+            
+          </div>
+        </div> 
       </div>
-    </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

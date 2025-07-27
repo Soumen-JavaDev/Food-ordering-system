@@ -1,0 +1,29 @@
+@media (max-width: 979px) {
+  .side-bar {
+    display: none;
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+  }
+  .main-contener {
+    width: 100%;
+  }
+
+  .nav-element {
+    width: 100%;
+  }
+  #hamburger-open {
+    display: block;
+  }
+}
+@media (max-width:430px){
+  .signup{
+    display: none;
+  }
+  .side-bar {
+    display: none;
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+  }
+}
